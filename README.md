@@ -1,6 +1,6 @@
 # MyOwnFreeHost API Client
 
-An API client to use the free hosting system from [MyOwnFreeHost](https://myownfreehost.net).
+An API client to use the free hosting system from [MyOwnFreeHost](https://myownfreehost.net). Based off the API wrapper from InfinityFree
 
 **IMPORTANT: THIS LIBRARY IS AIMED AT EXPERIENCED PHP DEVELOPERS. Experience with object-oriented PHP and Composer is required. If you can't use oo-PHP and Composer, don't bother with this library.**
 
@@ -70,7 +70,7 @@ if ($createResponse->isSuccessful()) {
 
 ## License
 
-Copyright 2023 Greenreader9
+Copyright 2023 Greenreader9/Hans Adema/InfinityFree
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
