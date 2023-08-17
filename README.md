@@ -18,31 +18,11 @@ Before you can get started, you need to get the API credentials from MyOwnFreeHo
 
 ### Available Methods
 
-The MyOwnFreeHost API exposes the following methods. The available parameters are listed below.
-
-- createAccount: Create a new hosting account.
-    - username: A unique, 8 character identifier of the account.
-    - password: A password to login to the control panel, FTP and databases.
-    - domain: A domain name to create the account. Can be a subdomain or a custom domain.
-    - email: The email address of the user.
-    - plan: The name of the hosting plan to create the account on. Requires a hosting package to be configured through MyOwnFreeHost.
-- suspend: Suspend a hosting account.
-    - username: The unique, 8 character identifier of the account.
-    - reason: A string with information about why you are suspending the account.
-    - linked: If true, related accounts will be suspended as well.
-- unsuspend: Reactivate a hosting account.
-    - username: The unique, 8 character identifier of the account.
-- password: Change the password of a hosting account.
-    - username: The unique, 8 character identifier of the account.
-    - password: The new password to set for the account.
-- availability: Check if a given domain name is available to be added to an account.
-    - domain: The domain name or subdomain to check.
-- getUserDomains: Get the domain names linked to a given account.
-    - username: The vistaPanel login username (e.g. abcd_12345678).
-- getDomainUser: Get the information of a particular hosting domain name, including the account it's hosted on and the document root.
-    - domain: The domain name to search for.
+See client file
 
 ### Example
+
+The example below may not work due to modifications to the client. Please see the client file, or use the mofh-wrapper from the InfinityFreeHosting github profile
 
 ```php
 use \Greenreader9\MofhClient\Client;
