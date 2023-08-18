@@ -75,6 +75,7 @@ class ClientTest extends TestCase
         $email = $this->faker->email();
         $domain = $this->faker->domainName();
         $plan = $this->faker->word();
+        $ip = $this->faker->ipv4;
 
         $this->guzzleMockHandler->append(new Response());
 
@@ -92,6 +93,7 @@ class ClientTest extends TestCase
             'contactemail' => $email,
             'domain' => $domain,
             'plan' => $plan,
+            'ipaddy' => $ip,
         ], $postData);
     }
 
