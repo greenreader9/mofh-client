@@ -79,7 +79,7 @@ class ClientTest extends TestCase
 
         $this->guzzleMockHandler->append(new Response());
 
-        $response = $this->client->createAccount($username, $password, $email, $domain, $plan, $ipaddy);
+        $response = $this->client->createAccount($username, $password, $email, $domain, $plan, $ip);
         $this->assertInstanceOf(CreateAccountResponse::class, $response);
 
         $this->assertCount(1, $this->historyContainer);
