@@ -70,6 +70,7 @@ class Client
             'form_params' => $parameters,
             'auth' => [$this->apiUsername, $this->apiPassword],
             'timeout' => 60.0,
+            'force_ip_resolve' => 'v4',
         ]);
     }
 
@@ -88,7 +89,8 @@ class Client
                 'api_user' => $this->apiUsername,
                 'api_key' => $this->apiPassword,
             ], $parameters),
-            'timeout' => 5.0,
+            'timeout' => 5.0,  
+            'force_ip_resolve' => 'v4',
         ]);
     }
 
